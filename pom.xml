@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>websocket-demo</name>
-	<description>Spring Boot WebSocket Chat Demo</description>
+	<description>Azure Hour - Docker Demo - Websocket chat app</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -19,10 +19,11 @@
 	</parent>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+			<java.version>12</java.version>
+			<maven.test.skip>true</maven.test.skip>
+		</properties>
 
 	<dependencies>
 		<dependency>
@@ -67,8 +68,8 @@
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.0</version>
 				<configuration>
-					<!-- replace `callicoder` with your docker id-->
-					<repository>callicoder/spring-boot-websocket-chat-demo</repository>
+					<!-- replace `bnm123z` with your docker id-->
+					<repository>bnm123z/spring-boot-websocket-chat-demo</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
