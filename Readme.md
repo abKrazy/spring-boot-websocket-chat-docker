@@ -28,7 +28,8 @@ Alternatively, you can run the app directly without packaging it like so -
 mvn spring-boot:run
 ```
 
-**3. Run as a docker container
+**3. Run as a docker container**
+
 docker build -t spring-boot-websocket-chat-demo .
 
 docker run -p 5000:8080 spring-boot-websocket-chat-demo
